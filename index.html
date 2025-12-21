@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZUMA Finanzas Compartidas App: La herramienta definitiva para controlar gastos, ajustar por inflación y gestionar inversiones. Funciona Offline.">
+    <title>ZUMA Finanzas Compartidas App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        zumaBlue: '#005CA9',
+                        zumaDark: '#004077',
+                        zumaGreen: '#4CAF50',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .phone-mockup {
+            border: 12px solid #333;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- NAV -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-sm fixed w-full z-50">
+        <div class="flex items-center gap-3">
+            <img src="icon.png" alt="ZUMA Logo" class="w-10 h-10 rounded-xl shadow-sm object-contain">
+            <span class="text-base md:text-xl font-bold text-zumaBlue tracking-tight leading-tight">
+                ZUMA <span class="hidden sm:inline">Finanzas Compartidas App</span>
+            </span>
+        </div>
+
+        <div class="hidden md:flex gap-6 text-sm font-medium text-gray-600">
+            <a href="#features" class="hover:text-zumaBlue">Funcionalidades</a>
+            <a href="#guides" class="hover:text-zumaBlue">Guías y Ayuda</a>
+            <a href="#contact" class="hover:text-zumaBlue">Contacto</a>
+        </div>
+        <a href="#download" class="bg-zumaGreen text-white px-4 py-2 rounded-lg font-bold text-sm hover:bg-green-600 transition shadow-lg">
+            Descargar
+        </a>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2 text-center md:text-left">
+            <span class="bg-blue-100 text-zumaBlue px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Versión 14.0 Ya Disponible</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                Menos cuentas,<br> <span class="text-zumaBlue">más tranquilidad.</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                La forma más simple de dividir gastos con amigos, pareja o socios. 
+                <br><strong>Funciona Offline</strong>, ajusta por inflación y gestiona tus inversiones.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start" id="download">
+                <!-- Botón Play Store -->
+                <!-- ¡NO OLVIDES PEGAR TU LINK DE PLAY STORE AQUÍ ABAJO! -->
+                <a href="#" class="flex items-center bg-black text-white px-6 py-3 rounded-xl hover:opacity-80 transition gap-3">
+                    <i class="fab fa-google-play text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs uppercase">Disponible en</div>
+                        <div class="text-sm font-bold font-sans">Google Play</div>
+                    </div>
+                </a>
+                <a href="#" class="flex items-center bg-gray-200 text-gray-400 px-6 py-3 rounded-xl cursor-not-allowed gap-3">
+                    <i class="fab fa-apple text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-xs uppercase">Próximamente en</div>
+                        <div class="text-sm font-bold font-sans">App Store</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center relative">
+            <div class="phone-mockup w-64 h-[550px] bg-white relative z-10">
+                <img src="captura.png" alt="Captura ZUMA" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute top-10 right-10 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+            <div class="absolute bottom-10 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        </div>
+    </header>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">¿Por qué usar ZUMA?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Diseñada para la economía real. Olvídate de Excel y de apps que requieren internet para cargar un café.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition border border-gray-100">
+                    <div class="w-12 h-12 bg-zumaBlue text-white rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Offline First</h3>
+                    <p class="text-gray-600 text-sm">Carga gastos al instante sin señal. Tus datos viven en tu dispositivo y se sincronizan cuando tú quieres.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition border border-gray-100">
+                    <div class="w-12 h-12 bg-zumaGreen text-white rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Ajuste por Inflación</h3>
+                    <p class="text-gray-600 text-sm">Única app que recalcula deudas y cuotas futuras basándose en tasas de inflación configurables.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-2xl hover:shadow-lg transition border border-gray-100">
+                    <div class="w-12 h-12 bg-orange-500 text-white rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Proyectos Cloud</h3>
+                    <p class="text-gray-600 text-sm">Crea grupos para viajes o gastos de pareja. Comparte el ID y colabora en tiempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUÍAS (DOCUMENTACIÓN) -->
+    <section id="guides" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Centro de Ayuda</h2>
+                <p class="text-gray-600">Aprende a sacar el máximo provecho de ZUMA con nuestras guías oficiales.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Guía 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col items-center text-center">
+                    <div class="mb-4 text-zumaBlue text-4xl"><i class="fas fa-rocket"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Guía Rápida</h3>
+                    <p class="text-sm text-gray-500 mb-4">Primeros pasos, configuración inicial y carga de gastos.</p>
+                    <a href="https://docs.google.com/document/d/1w65omuZjoLvgPW81NwdjirVUcENDMajg4p3D1PJEyl0/edit?tab=t.0#heading=h.e7i4znmp1hh" target="_blank" class="text-zumaBlue font-bold hover:underline">Ver Documento →</a>
+                </div>
+                <!-- Guía 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col items-center text-center">
+                    <div class="mb-4 text-zumaGreen text-4xl"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Guía Avanzada</h3>
+                    <p class="text-sm text-gray-500 mb-4">Proyectos compartidos, sincronización nube y ajustes financieros.</p>
+                    <a href="https://docs.google.com/document/d/1TEyO8I9tB0uE9wU7ihyuKusnYSOYxqG4ZW3UzsdaN2g/edit?tab=t.0" target="_blank" class="text-zumaBlue font-bold hover:underline">Ver Documento →</a>
+                </div>
+                <!-- Guía 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col items-center text-center">
+                    <div class="mb-4 text-orange-500 text-4xl"><i class="fas fa-chart-pie"></i></div>
+                    <h3 class="font-bold text-lg mb-2">Guía de Reportes</h3>
+                    <p class="text-sm text-gray-500 mb-4">Aprende a interpretar los gráficos y exportar tus datos.</p>
+                    <a href="https://docs.google.com/document/d/10eWuAAL6HcWT23zrRFeQPjt41nu-LMESkzsfPXVg3lc/edit?tab=t.0" target="_blank" class="text-zumaBlue font-bold hover:underline">Ver Documento →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Contáctanos</h2>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200 shadow-sm">
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Tu Nombre</label>
+                        <input type="text" id="name" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-zumaBlue focus:border-zumaBlue" placeholder="Ej: Juan Pérez">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Tu Email</label>
+                        <input type="email" id="email" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-zumaBlue focus:border-zumaBlue" placeholder="juan@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                        <textarea id="message" rows="4" required class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-zumaBlue focus:border-zumaBlue" placeholder="Escribe tu consulta o sugerencia..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-zumaBlue text-white font-bold py-3 rounded-xl hover:bg-zumaDark transition flex items-center justify-center gap-2">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER LEGAL -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                 <img src="icon.png" alt="ZUMA Logo" class="w-8 h-8 rounded-lg grayscale opacity-70">
+                <div>
+                    <span class="text-xl font-bold text-white tracking-tight">ZUMA</span>
+                    <p class="text-sm mt-1">© 2025 Finanzas Compartidas.</p>
+                </div>
+            </div>
+            <div class="flex gap-6 text-sm">
+                <!-- LINKS LEGALES ACTUALIZADOS -->
+                <a href="https://docs.google.com/document/d/1EnUgaDHc_86Gpq7zP84u28rWmxrijPH8tCG807FPzLo/edit?usp=drive_link" target="_blank" class="hover:text-white transition">Términos y Condiciones</a>
+                <a href="https://docs.google.com/document/d/1IS1JHC4v2pKL3qPBhiveMjcih5rZY5mVc4mCciSwIG0/edit?usp=drive_link" target="_blank" class="hover:text-white transition">Política de Privacidad</a>
+                <a href="#contact" class="hover:text-white transition">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LOGICA DEL FORMULARIO (MAILTO) -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const subject = "Zuma App - Contacto web";
+            const body = `Nombre: ${name}\nEmail: ${email}\n\n${message}`;
+            
+            // Abrir cliente de correo
+            window.location.href = `mailto:juansempio@yahoo.com.ar?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+
+</body>
+</html>
