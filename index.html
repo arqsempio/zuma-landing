@@ -27,6 +27,7 @@
             overflow: hidden;
             box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -53,7 +54,7 @@
     <!-- HERO SECTION -->
     <header class="pt-32 pb-20 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2 text-center md:text-left">
-            <span class="bg-blue-100 text-zumaBlue px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Versión 16.0 Ya Disponible</span>
+            <span class="bg-blue-100 text-zumaBlue px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Versión 19.0 Ya Disponible</span>
             <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
                 Menos cuentas,<br> <span class="text-zumaBlue">más tranquilidad.</span>
             </h1>
@@ -63,8 +64,6 @@
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start" id="download">
-                <!-- Botón Play Store -->
-                <!-- ¡NO OLVIDES PEGAR TU LINK DE PLAY STORE AQUÍ ABAJO! -->
                 <a href="https://play.google.com/store/apps/details?id=com.arqsempio.zuma" class="flex items-center bg-black text-white px-6 py-3 rounded-xl hover:opacity-80 transition gap-3">
                     <i class="fab fa-google-play text-2xl"></i>
                     <div class="text-left">
@@ -134,21 +133,18 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-6">
-                <!-- Guía 1 -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col items-center text-center">
                     <div class="mb-4 text-zumaBlue text-4xl"><i class="fas fa-rocket"></i></div>
                     <h3 class="font-bold text-lg mb-2">Guía Rápida</h3>
                     <p class="text-sm text-gray-500 mb-4">Primeros pasos, configuración inicial y carga de gastos.</p>
                     <a href="https://docs.google.com/document/d/1w65omuZjoLvgPW81NwdjirVUcENDMajg4p3D1PJEyl0/edit?tab=t.0#heading=h.e7i4znmp1hh" target="_blank" class="text-zumaBlue font-bold hover:underline">Ver Documento →</a>
                 </div>
-                <!-- Guía 2 -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col items-center text-center">
                     <div class="mb-4 text-zumaGreen text-4xl"><i class="fas fa-graduation-cap"></i></div>
                     <h3 class="font-bold text-lg mb-2">Guía Avanzada</h3>
                     <p class="text-sm text-gray-500 mb-4">Proyectos compartidos, sincronización nube y ajustes financieros.</p>
                     <a href="https://docs.google.com/document/d/1TEyO8I9tB0uE9wU7ihyuKusnYSOYxqG4ZW3UzsdaN2g/edit?tab=t.0" target="_blank" class="text-zumaBlue font-bold hover:underline">Ver Documento →</a>
                 </div>
-                <!-- Guía 3 -->
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col items-center text-center">
                     <div class="mb-4 text-orange-500 text-4xl"><i class="fas fa-chart-pie"></i></div>
                     <h3 class="font-bold text-lg mb-2">Guía de Reportes</h3>
@@ -159,7 +155,7 @@
         </div>
     </section>
 
-    <!-- FORMULARIO DE CONTACTO -->
+    <!-- CONTACTO -->
     <section id="contact" class="py-20 bg-white">
         <div class="max-w-3xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Contáctanos</h2>
@@ -185,42 +181,32 @@
         </div>
     </section>
 
-    <!-- FOOTER LEGAL -->
-    <footer class="bg-gray-900 text-gray-400 py-12 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-3">
-                 <img src="icon.png" alt="ZUMA Logo" class="w-8 h-8 rounded-lg grayscale opacity-70">
-                <div>
-                    <span class="text-xl font-bold text-white tracking-tight">ZUMA</span>
-                    <p class="text-sm mt-1">© 2025 Finanzas Compartidas.</p>
-                </div>
-            </div>
-            <div class="flex gap-6 text-sm">
-                <!-- LINKS LEGALES ACTUALIZADOS -->
-                <a href="https://docs.google.com/document/d/1EnUgaDHc_86Gpq7zP84u28rWmxrijPH8tCG807FPzLo/edit?usp=drive_link" target="_blank" class="hover:text-white transition">Términos y Condiciones</a>
-                <a href="https://docs.google.com/document/d/1IS1JHC4v2pKL3qPBhiveMjcih5rZY5mVc4mCciSwIG0/edit?usp=drive_link" target="_blank" class="hover:text-white transition">Política de Privacidad</a>
-                <a href="#contact" class="hover:text-white transition">Contacto</a>
-            </div>
+    <!-- FOOTER LEGAL (REQUERIDO POR GOOGLE) -->
+    <footer style="text-align: center; padding: 60px 20px; font-family: sans-serif; background-color: #111827; color: #9ca3af; border-top: 1px solid #374151;">
+        <div style="margin-bottom: 20px;">
+            <img src="icon.png" alt="ZUMA Logo" style="width: 40px; height: 40px; margin: 0 auto 10px; border-radius: 10px; filter: grayscale(1); opacity: 0.7;">
+            <p style="color: #ffffff; font-weight: bold; font-size: 18px; letter-spacing: 1px;">ZUMA - Finanzas Compartidas</p>
         </div>
+        <p style="font-size: 14px; margin-bottom: 15px;">
+            <a href="privacy.html" style="color: #60a5fa; text-decoration: none; margin: 0 15px; font-weight: 500;">Política de Privacidad</a> | 
+            <a href="terms.html" style="color: #60a5fa; text-decoration: none; margin: 0 15px; font-weight: 500;">Términos y Condiciones</a>
+        </p>
+        <p style="font-size: 12px; color: #6b7280;">© 2026 ZUMA App. Todos los derechos reservados.</p>
+        <p style="font-size: 11px; color: #4b5563; margin-top: 5px;">Desarrollado por arqsempio.github.io</p>
     </footer>
 
-    <!-- LOGICA DEL FORMULARIO (MAILTO) -->
+    <!-- LOGICA DEL FORMULARIO -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
-            
             const subject = "Zuma App - Contacto web";
             const body = `Nombre: ${name}\nEmail: ${email}\n\n${message}`;
-            
-            // Abrir cliente de correo
             window.location.href = `mailto:juansempio@yahoo.com.ar?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         });
     </script>
 
 </body>
-
 </html>
-
